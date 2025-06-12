@@ -5,5 +5,12 @@
     "binding": "ASSETS",
     "not_found_handling": "single-page-application"
   },
-  "main": "./api/index.js"
+  "main": "./api/index.js",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "SHOP",
+      "database_id": "4a0be251-d95b-4f5d-8651-1b66e009f36d"
+    }
+  ]
 }
