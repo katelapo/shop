@@ -1,7 +1,11 @@
-export default {
-  fetch(request, env) {
-    const url = new URL(request.url);
+import { hono } from 'hono';
 
-    return env.ASSETS.fetch(request);
-  }
-}
+const app = new Hono();
+
+app.get('/api', (c) => {
+  return c.text('hi');
+})
+
+app.get('*', (c) => c.env.ASSETS.fetch(c.req.raw));
+
+export default app;

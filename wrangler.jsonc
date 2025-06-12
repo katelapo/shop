@@ -2,6 +2,7 @@
   "name": "shop",
   "compatibility_date": "2025-05-05",
   "assets": { 
+    "binding": "ASSETS",
     "not_found_handling": "single-page-application"
   },
   "main": "./api/index.js"
